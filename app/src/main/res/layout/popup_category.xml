@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Category Name"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etDialogCategoryName"
+        android:hint="e.g. Rent, Groceries, Electricity"
+        android:inputType="textCapWords"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:text="Transaction Type"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgDialogCategoryType"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rbDialogExpense"
+            android:text="Expense"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"/>
+
+        <RadioButton
+            android:id="@+id/rbDialogIncome"
+            android:text="Income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDialogSaveCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save Category"
+        android:backgroundTint="#00B4D8"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</LinearLayout>
